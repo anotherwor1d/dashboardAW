@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Analytics Dashboard - This is an example dashboard created using build-in elements and components.</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!--
+    =========================================================
+    * ArchitectUI HTML Theme Dashboard - v1.0.0
+    =========================================================
+    * Product Page: https://dashboardpack.com
+    * Copyright 2019 DashboardPack (https://dashboardpack.com)
+    * Licensed under MIT (https://github.com/DashboardPack/architectui-html-theme-free/blob/master/LICENSE)
+    =========================================================
+    * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+    -->
+    <link href="./main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-header">
+        <div class="ui-theme-settings">
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class"
+                                                    data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle"
+                                                            data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always
+                                                    visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class"
+                                                    data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle"
+                                                            data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always
+                                                    visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class"
+                                                    data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle"
+                                                            data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always
+                                                    visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button"
+                                class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class"
+                                data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class"
+                                            data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class"
+                                            data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class"
+                                            data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class"
+                                            data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class"
+                                            data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class"
+                                            data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class"
+                                            data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class"
+                                            data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class"
+                                            data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class"
+                                            data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class"
+                                            data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class"
+                                            data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class"
+                                            data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class"
+                                            data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class"
+                                            data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class"
+                                            data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class"
+                                            data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class"
+                                            data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class"
+                                            data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class"
+                                            data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class"
+                                            data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class"
+                                            data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class"
+                                            data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class"
+                                            data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class"
+                                            data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class"
+                                            data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class"
+                                            data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class"
+                                            data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class"
+                                            data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class"
+                                            data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class"
+                                            data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class"
+                                            data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class"
+                                            data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class"
+                                            data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class"
+                                            data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class"
+                                            data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button"
+                                class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class"
+                                data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class"
+                                            data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class"
+                                            data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class"
+                                            data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class"
+                                            data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class"
+                                            data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class"
+                                            data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class"
+                                            data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class"
+                                            data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class"
+                                            data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class"
+                                            data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class"
+                                            data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class"
+                                            data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class"
+                                            data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class"
+                                            data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class"
+                                            data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class"
+                                            data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class"
+                                            data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class"
+                                            data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class"
+                                            data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class"
+                                            data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class"
+                                            data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class"
+                                            data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class"
+                                            data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class"
+                                            data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class"
+                                            data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class"
+                                            data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class"
+                                            data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class"
+                                            data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class"
+                                            data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class"
+                                            data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class"
+                                            data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class"
+                                            data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class"
+                                            data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class"
+                                            data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class"
+                                            data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class"
+                                            data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button"
+                                class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button"
+                                                class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class"
+                                                data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button"
+                                                class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class"
+                                                data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-main p-0">
+            <div class="app-main__outer">
+                <div class="app-main__inner">
+                    <div class="app-page-title">
+                        <div class="page-title-wrapper">
+                            <div class="page-title-heading">
+                                <div class="text-center">
+                                    <div class="mr-3">
+                                         <img src="https://i.ibb.co/r2hncxp/another-World-7.png" width="50" alt="another-World-7">
+                                     </div>
+                                </div>
+                                <h1>Another World Dashboard
+                                    <div class="page-title-subheading">Mining Dashboard for Another World game.
+                                    </div>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-xl-4 col-12">
+                            <div class="card mb-3 widget-content" style="background-color: #5865F2;">
+                                <div class="widget-content-wrapper text-white">
+                                    <div class="widget-content-left">
+                                        <div class="widget-heading">TOOLS SOLD</div>
+                                    </div>
+                                    <div class="widget-content-right">
+                                        <div class="widget-numbers text-white"><span id="num_toolsSold"> </span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-4 col-12">
+                            <div class="card mb-3 widget-content" style="background-color: #5865F2;">
+                                <div class="widget-content-wrapper text-white">
+                                    <div class="widget-content-left">
+                                        <div class="widget-heading">PRIZE POOL</div>
+                                    </div>
+                                    <div class="widget-content-right">
+                                        <div class="widget-numbers text-white"><span id="num_prizePool"></span> WAX
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-4 col-12">
+                            <div class="card mb-3 widget-content" style="background-color: #5865F2;">
+                                <div class="widget-content-wrapper text-white">
+                                    <div class="widget-content-left">
+                                        <div class="widget-heading">END SEASON IN</div>
+                                    </div>
+                                    <div class="widget-content-right">
+                                        <div class="widget-numbers text-white"><span id="countdown"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="justify-content-center ml-3">
+                            <iframe src="https://unbelievaboat.com/leaderboard/866050015511445565/widget" width="1845"
+                                height="552" style="border: 1;align-items: center;"></iframe>
+                        </div>
+
+
+                        <div class="col-12">
+                            <div class="main-card mb-3 card">
+                                <div style="background-color:#5865F2">
+                                    <h1 class="text-center text-white p-4 mb-3 text-bold">PRIZE RANKING TABLE</h1>
+                                    <table class="mb-0 table table-striped text-white"
+                                        style="background-color: #23272A;font-size: x-large;">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>% of Pool</th>
+                                                <th>Total Prize</th>
+                                                <th>Garanteed</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>40</td>
+                                                <td><span id="num_prize1"></span> wax</td>
+                                                <td>200 wax</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>20</td>
+                                                <td><span id="num_prize2"></span> wax</td>
+                                                <td>100 wax</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>10</td>
+                                                <td><span id="num_prize3"></span> wax</td>
+                                                <td>75 wax</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>8</td>
+                                                <td><span id="num_prize4"></span> wax</td>
+                                                <td>50 wax</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>6</td>
+                                                <td><span id="num_prize5"></span> wax</td>
+                                                <td>45 wax</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>5</td>
+                                                <td><span id="num_prize6"></span> wax</td>
+                                                <td>40 wax</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td>3</td>
+                                                <td><span id="num_prize7"></span> wax</td>
+                                                <td>35 wax</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                <td>3</td>
+                                                <td><span id="num_prize8"></span> wax</td>
+                                                <td>30 wax</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">9</th>
+                                                <td>3</td>
+                                                <td><span id="num_prize9"></span> wax</td>
+                                                <td>25 wax</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">10</th>
+                                                <td>2</td>
+                                                <td><span id="num_prize10"></span> wax</td>
+                                                <td>20 wax</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            </div>
+            <script>
+
+                var stats = {
+                    'toolsSold': 0.0,
+                    'prizePool': 0.0,
+                    'prize1': 0.0,
+                    'prize2': 0.0,
+                    'prize3': 0.0,
+                    'prize4': 0.0,
+                    'prize5': 0.0,
+                    'prize6': 0.0,
+                    'prize7': 0.0,
+                    'prize8': 0.0,
+                    'prize9': 0.0,
+                    'prize10': 0.0
+                }
+                var tasks_done = 0;
+
+                function showMessage(message, error) {
+                    document.getElementById("message").style.backgroundColor = (error) ? "tomato" : "mediumseagreen"
+                    document.getElementById("message").textContent = message;
+                }
+
+                function updateUI() {
+                    for (var key in stats) {
+                        document.getElementById("num_" + key).innerHTML = new Number(parseInt(stats[key])).toLocaleString();
+                    }
+                    var now = Date.now();
+                    var endSeason = countdown(now, 1630454399000, countdown.HOURS,countdown.MINUTES);
+
+                    document.getElementById("countdown").innerHTML = endSeason.toLocaleString();
+                    // document.getElementById("message").style.display = "none";
+                }
+
+                function applyOffset(template_id, offset) {
+                    switch (template_id) {
+                        case 240317: // template id
+                            stats['toolsSold'] += (offset * 1);
+                            break;
+                        case 241279: // template id
+                            stats['toolsSold'] += (offset * 1);
+                            break;
+                        case 241916: // template id
+                            stats['toolsSold'] += (offset * 1);
+                            break;
+                        case 243059: // template id
+                            stats['toolsSold'] += (offset * 1);
+                            break;
+                        case 243948: // template id
+                            stats['toolsSold'] += (offset * 1);
+                            break;
+                        case 244573: // template id
+                            stats['toolsSold'] += (offset * 1);
+                            break;
+                        case 245555: // template id
+                            stats['toolsSold'] += (offset * 1);
+                            break;
+                        case 246529: // template id
+                            stats['toolsSold'] += (offset * 1);
+                            break;
+                        case 246660: // template id
+                            stats['toolsSold'] += (offset * 1);
+                            break;
+                        case 247118: // template id
+                            stats['toolsSold'] += (offset * 1);
+                            break;
+                    }
+                    proccessPrizePool();
+                    proccessPrizePositions();
+                }
+
+                function processBurnData(data) {
+                    for (let i = 0; i < data.length; i++) {
+                        applyOffset(data[i].template_id, 0)
+                    }
+                    tasks_done++;
+                    updateUI();
+                }
+
+                function proccessPrizePool() {
+                    data = stats['toolsSold'];
+
+                    prize = data * (10 * 0.30);
+
+                    stats['prizePool'] = prize;
+                }
+
+                function proccessPrizePositions() {
+
+                    prize = stats['prizePool'];
+
+                    stats['prize1'] = prize * 0.40;
+                    stats['prize2'] = prize * 0.20;
+                    stats['prize3'] = prize * 0.10;
+                    stats['prize4'] = prize * 0.08;
+                    stats['prize5'] = prize * 0.06;
+                    stats['prize6'] = prize * 0.05;
+                    stats['prize7'] = prize * 0.03;
+                    stats['prize8'] = prize * 0.03;
+                    stats['prize9'] = prize * 0.03;
+                    stats['prize10'] = prize * 0.02;
+
+
+                }
+
+                function processTemplateData(data) {
+                    for (let i = 0; i < data.length; i++) {
+                        applyOffset(parseInt(data[i].template_id), parseInt(data[i].issued_supply))
+                    }
+                    tasks_done++;
+                    updateUI();
+                }
+
+
+                function fetchStats() {
+                    fetch("https://wax.api.atomicassets.io/atomicassets/v1/templates?limit=200&has_assets=true&collection_name=anotherwor1d")
+                        .then(response => response.json())
+                        .then(data => processTemplateData(data.data))
+                        .catch(error => {
+                            showMessage('NFT Check Failed: ' + error, true)
+                        });
+
+                    fetch("https://wax.api.atomicassets.io/atomicassets/v1/collections/anotherwor1d/stats")
+                        .then(response => response.json())
+                        .then(data => processBurnData(data.data.burned_by_template))
+                        .catch(error => {
+                            showMessage('NFT Check Failed: ' + error, true)
+                        });
+                }
+
+                window.onload = async function () {
+                    fetchStats();
+                };
+            </script>
+            <script src="assets/scripts/countdown.js"></script>
+</body>
+
+</html>
