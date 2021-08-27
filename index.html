@@ -624,8 +624,10 @@
 
                 function proccessPrizePool() {
                     data = stats['toolsSold'];
-
-                    prize = data * (10 * 0.30);
+       
+                    sumWax = data - 248
+                    multiplyWax = sumWax*1.5 + 744 
+                    prize = multiplyWax;
 
                     stats['prizePool'] = prize;
                 }
