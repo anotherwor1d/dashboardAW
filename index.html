@@ -568,7 +568,7 @@
                         document.getElementById("num_" + key).innerHTML = new Number(parseInt(stats[key])).toLocaleString();
                     }
                     var now = Date.now();
-                    var endSeason = countdown(now, 1633046399000, countdown.HOURS,countdown.MINUTES);
+                    var endSeason = countdown(now, 1634342399000, countdown.HOURS,countdown.MINUTES);
 
                     document.getElementById("countdown").innerHTML = endSeason.toLocaleString();
                     // document.getElementById("message").style.display = "none";
@@ -576,45 +576,43 @@
 
                 function applyOffset(template_id, offset) {
                     switch (template_id) {
-                        case 286977: // template id
+                        case 299917: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 286974: // template id
+                        case 299918: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 286979: // template id
+                        case 299919: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 286976: // template id
+                        case 299920: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 286980: // template id
+                        case 299921: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 286981: // template id
+                        case 299922: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 286987: // template id
+                        case 299923: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 286991: // template id
+                        case 299924: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 286995: // template id
+                        case 299926: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 287000: // template id
+                        case 299927: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-			case 287011: // template id
+			case 299928: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                    	case 287013: // template id
+                    	case 299932: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-			case 287022: // template id
-                            stats['toolsSold'] += (offset * 1);
-                            break;
+			
 		}
                     proccessPrizePool();
                     proccessPrizePositions();
@@ -632,7 +630,7 @@
                     data = stats['toolsSold'];
        
                     sumWax = data - 0
-                    multiplyWax = sumWax*1.5  
+                    multiplyWax = sumWax*1.3  
                     prize = multiplyWax;
 
                     stats['prizePool'] = prize;
