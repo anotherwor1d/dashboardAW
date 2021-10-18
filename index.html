@@ -647,7 +647,6 @@
                     	case 328065: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-			
 		}
                     proccessPrizePool();
                     proccessPrizePositions();
@@ -656,7 +655,7 @@
                 function processBurnData(data) {
                     for (let i = 0; i < data.length; i++) {
                         applyOffset(data[i].template_id, 0)
-                    }
+                }
                     tasks_done++;
                     updateUI();
                 }
@@ -696,7 +695,7 @@
                 function processTemplateData(data) {
                     for (let i = 0; i < data.length; i++) {
                         applyOffset(parseInt(data[i].template_id), parseInt(data[i].issued_supply))
-                    }
+                }
                     tasks_done++;
                     updateUI();
                 }
