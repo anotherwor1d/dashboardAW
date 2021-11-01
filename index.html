@@ -473,13 +473,13 @@
                                         <tbody>
                                             <tr>
                                                 <th scope="row">1</th>
-                                                <td>20</td>
+                                                <td>18</td>
                                                 <td><span id="num_prize1"></span> wax</td>
-                                                <td>75 wax</td>
+                                                <td>65 wax</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">2</th>
-                                                <td>15</td>
+                                                <td>13</td>
                                                 <td><span id="num_prize2"></span> wax</td>
                                                 <td>50 wax</td>
                                             </tr>
@@ -491,76 +491,107 @@
                                             </tr>
                                             <tr>
                                                 <th scope="row">4</th>
-                                                <td>9</td>
+                                                <td>8</td>
                                                 <td><span id="num_prize4"></span> wax</td>
                                                 <td>25 wax</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">5</th>
-                                                <td>9</td>
+                                                <td>8</td>
                                                 <td><span id="num_prize5"></span> wax</td>
-                                                <td>20 wax</td>
+                                                <td>25 wax</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">6</th>
-                                                <td>8</td>
+                                                <td>7</td>
                                                 <td><span id="num_prize6"></span> wax</td>
                                                 <td>20 wax</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">7</th>
-                                                <td>7</td>
+                                                <td>6</td>
                                                 <td><span id="num_prize7"></span> wax</td>
                                                 <td>20 wax</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">8</th>
-                                                <td>7</td>
+                                                <td>6</td>
                                                 <td><span id="num_prize8"></span> wax</td>
                                                 <td>15 wax</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">9</th>
-                                                <td>5</td>
+                                                <td>4</td>
                                                 <td><span id="num_prize9"></span> wax</td>
                                                 <td>15 wax</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">10</th>
-                                                <td>5</td>
+                                                <td>4</td>
                                                 <td><span id="num_prize10"></span> wax</td>
-                                                <td>5 wax</td>
+                                                <td>10 wax</td>
  					    </tr>
                                             <tr>
                                                 <th scope="row">11</th>
-                                                <td>1</td>
+                                                <td>3</td>
                                                 <td><span id="num_prize11"></span> wax</td>
-                                                <td>5 wax</td>
+                                                <td>8 wax</td>
 					    </tr>
                                             <tr>
                                                 <th scope="row">12</th>
-                                                <td>1</td>
+                                                <td>3</td>
                                                 <td><span id="num_prize12"></span> wax</td>
-                                                <td>5 wax</td>
+                                                <td>6 wax</td>
 					    </tr>
                                             <tr>
                                                 <th scope="row">13</th>
-                                                <td>1</td>
+                                                <td>2</td>
                                                 <td><span id="num_prize13"></span> wax</td>
-                                                <td>5 wax</td>
+                                                <td>6 wax</td>
    					    </tr>
                                             <tr>
                                                 <th scope="row">14</th>
-                                                <td>1</td>
+                                                <td>2</td>
                                                 <td><span id="num_prize14"></span> wax</td>
-                                                <td>5 wax</td>
+                                                <td>6 wax</td>
 					    </tr>
                                             <tr>
                                                 <th scope="row">15</th>
                                                 <td>1</td>
                                                 <td><span id="num_prize15"></span> wax</td>
-                                                <td>5 wax</td>
+                                                <td>4 wax</td>
                                             </tr>
+					    <tr>
+                                                <th scope="row">16</th>
+                                                <td>1</td>
+                                                <td><span id="num_prize16"></span> wax</td>
+                                                <td>4 wax</td>
+ 				            </tr>
+					    <tr>
+                                                <th scope="row">17</th>
+                                                <td>1</td>
+                                                <td><span id="num_prize17"></span> wax</td>
+                                                <td>4 wax</td>
+					    </tr>
+					    <tr>
+                                                <th scope="row">18</th>
+                                                <td>1</td>
+                                                <td><span id="num_prize18"></span> wax</td>
+                                                <td>3 wax</td>
+					    </tr>
+					    <tr>
+                                                <th scope="row">19</th>
+                                                <td>1</td>
+                                                <td><span id="num_prize19"></span> wax</td>
+                                                <td>2 wax</td>
+ 					    </tr>
+					    <tr>
+                                                <th scope="row">20</th>
+                                                <td>1</td>
+                                                <td><span id="num_prize20"></span> wax</td>
+                                                <td>2 wax</td>
+					    </tr>
+					    <tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -590,6 +621,12 @@
 		    'prize13': 0.0,
 		    'prize14': 0.0,
 		    'prize15': 0.0,
+		    'prize16': 0.0,
+		    'prize17': 0.0,
+		    'prize18': 0.0,
+		    'prize19': 0.0,
+		    'prize20': 0.0,
+
                 }
                 var tasks_done = 0;
 
@@ -603,7 +640,7 @@
                         document.getElementById("num_" + key).innerHTML = new Number(parseInt(stats[key])).toLocaleString();
                     }
                     var now = Date.now();
-                    var endSeason = countdown(now,1635724799000,countdown.HOURS,countdown.MINUTES);
+                    var endSeason = countdown(now,1637020799000,countdown.HOURS,countdown.MINUTES);
 
                     document.getElementById("countdown").innerHTML = endSeason.toLocaleString();
                     // document.getElementById("message").style.display = "none";
@@ -611,40 +648,43 @@
 
                 function applyOffset(template_id, offset) {
                     switch (template_id) {
-                        case 328048: // template id
+                        case 340706: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 328054: // template id
+                        case 340708: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 328055: // template id
+                        case 340709: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 328056: // template id
+                        case 340710: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 328058: // template id
+                        case 340711: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 328059: // template id
+                        case 340712: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 328060: // template id
+                        case 340713: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 328061: // template id
+                        case 340714: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 328062: // template id
+                        case 340715: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 328063: // template id
+                        case 340716: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-			case 328064: // template id
+			case 340718: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                    	case 328065: // template id
+                    	case 340719: // template id
+                            stats['toolsSold'] += (offset * 1);
+                            break;
+			case 3407121: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
 		}
@@ -674,21 +714,26 @@
 
                     prize = stats['prizePool'];
 
-                    stats['prize1'] = prize * 0.20;
-                    stats['prize2'] = prize * 0.15;
+                    stats['prize1'] = prize * 0.18;
+                    stats['prize2'] = prize * 0.13;
                     stats['prize3'] = prize * 0.10;
-                    stats['prize4'] = prize * 0.09;
-                    stats['prize5'] = prize * 0.09;
-                    stats['prize6'] = prize * 0.08;
-                    stats['prize7'] = prize * 0.07;
-                    stats['prize8'] = prize * 0.07;
-                    stats['prize9'] = prize * 0.05;
-                    stats['prize10'] = prize * 0.05;
-		    stats['prize11'] = prize * 0.01;
-		    stats['prize12'] = prize * 0.01;
-		    stats['prize13'] = prize * 0.01;
-		    stats['prize14'] = prize * 0.01;
+                    stats['prize4'] = prize * 0.08;
+                    stats['prize5'] = prize * 0.08;
+                    stats['prize6'] = prize * 0.07;
+                    stats['prize7'] = prize * 0.06;
+                    stats['prize8'] = prize * 0.06;
+                    stats['prize9'] = prize * 0.04;
+                    stats['prize10'] = prize * 0.04;
+		    stats['prize11'] = prize * 0.03;
+		    stats['prize12'] = prize * 0.03;
+		    stats['prize13'] = prize * 0.02;
+		    stats['prize14'] = prize * 0.02;
 		    stats['prize15'] = prize * 0.01;
+		    stats['prize16'] = prize * 0.01;
+		    stats['prize17'] = prize * 0.01;
+		    stats['prize18'] = prize * 0.01;
+		    stats['prize19'] = prize * 0.01;
+		    stats['prize20'] = prize * 0.01;
 
                 }
 
