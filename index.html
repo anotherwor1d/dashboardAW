@@ -592,6 +592,35 @@
                                                 <td>2 wax</td>
 					    </tr>
 					    <tr>
+                                                <th scope="row">21</th>
+                                                <td>1</td>
+                                                <td><span id="num_prize20"></span> wax</td>
+                                                <td>2 wax</td>
+					    </tr>
+					    <tr>
+                                                <th scope="row">22</th>
+                                                <td>1</td>
+                                                <td><span id="num_prize20"></span> wax</td>
+                                                <td>2 wax</td>
+					    </tr>
+					    <tr>
+                                                <th scope="row">23</th>
+                                                <td>1</td>
+                                                <td><span id="num_prize20"></span> wax</td>
+                                                <td>2 wax</td>
+					    </tr>
+					    <tr>
+                                                <th scope="row">24</th>
+                                                <td>1</td>
+                                                <td><span id="num_prize20"></span> wax</td>
+                                                <td>2 wax</td>
+					    </tr>	
+					    <tr>
+                                                <th scope="row">25</th>
+                                                <td>1</td>
+                                                <td><span id="num_prize20"></span> wax</td>
+                                                <td>2 wax</td>
+				            <tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -626,6 +655,11 @@
 		    'prize18': 0.0,
 		    'prize19': 0.0,
 		    'prize20': 0.0,
+		    'prize21': 0.0,
+		    'prize22': 0.0,
+		    'prize23': 0.0,
+		    'prize24': 0.0,
+		    'prize25': 0.0,
 
                 }
                 var tasks_done = 0;
@@ -640,7 +674,7 @@
                         document.getElementById("num_" + key).innerHTML = new Number(parseInt(stats[key])).toLocaleString();
                     }
                     var now = Date.now();
-                    var endSeason = countdown(now,1637020799000,countdown.HOURS,countdown.MINUTES);
+                    var endSeason = countdown(now,1638316799000,countdown.HOURS,countdown.MINUTES);
 
                     document.getElementById("countdown").innerHTML = endSeason.toLocaleString();
                     // document.getElementById("message").style.display = "none";
@@ -648,43 +682,40 @@
 
                 function applyOffset(template_id, offset) {
                     switch (template_id) {
-                        case 340706: // template id
+                        case 360099: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 340708: // template id
+                        case 360100: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 340709: // template id
+                        case 360101: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 340710: // template id
+                        case 360102: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 340711: // template id
+                        case 360103: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 340712: // template id
+                        case 360104: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 340713: // template id
+                        case 360105: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 340714: // template id
+                        case 360106: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 340715: // template id
+                        case 360107: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                        case 340716: // template id
+                        case 360108: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-			case 340718: // template id
+			case 360109: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
-                    	case 340719: // template id
-                            stats['toolsSold'] += (offset * 1);
-                            break;
-			case 3407121: // template id
+                    	case 360110: // template id
                             stats['toolsSold'] += (offset * 1);
                             break;
 		}
@@ -704,7 +735,7 @@
                     data = stats['toolsSold'];
        
                     sumWax = data - 0
-                    multiplyWax = sumWax*1.2 
+                    multiplyWax = sumWax*0.9 
                     prize = multiplyWax;
 
                     stats['prizePool'] = prize;
@@ -714,27 +745,31 @@
 
                     prize = stats['prizePool'];
 
-                    stats['prize1'] = prize * 0.18;
-                    stats['prize2'] = prize * 0.13;
-                    stats['prize3'] = prize * 0.10;
-                    stats['prize4'] = prize * 0.08;
-                    stats['prize5'] = prize * 0.08;
-                    stats['prize6'] = prize * 0.07;
-                    stats['prize7'] = prize * 0.06;
-                    stats['prize8'] = prize * 0.06;
-                    stats['prize9'] = prize * 0.04;
-                    stats['prize10'] = prize * 0.04;
-		    stats['prize11'] = prize * 0.03;
-		    stats['prize12'] = prize * 0.03;
-		    stats['prize13'] = prize * 0.02;
-		    stats['prize14'] = prize * 0.02;
-		    stats['prize15'] = prize * 0.01;
-		    stats['prize16'] = prize * 0.01;
-		    stats['prize17'] = prize * 0.01;
-		    stats['prize18'] = prize * 0.01;
-		    stats['prize19'] = prize * 0.01;
-		    stats['prize20'] = prize * 0.01;
-
+                    stats['prize1'] = prize * 0.17;
+	            stats['prize2'] = prize * 0.12;
+		    stats['prize3'] = prize * 0.09;
+		    stats['prize4'] = prize * 0.08;
+		    stats['prize5'] = prize * 0.07;
+		    stats['prize6'] = prize * 0.06;
+		    stats['prize7'] = prize * 0.06;
+		    stats['prize8'] = prize * 0.06;
+		    stats['prize9'] = prize * 0.04;
+		    stats['prize10'] = prize * 0.04;
+		    stats['prize11'] = prize * 0.025;
+		    stats['prize12'] = prize * 0.025;
+		    stats['prize13'] = prize * 0.015;
+		    stats['prize14'] = prize * 0.015;
+		    stats['prize15'] = prize * 0.0125;
+		    stats['prize16'] = prize * 0.0125;
+		    stats['prize17'] = prize * 0.012;
+		    stats['prize18'] = prize * 0.012;
+		    stats['prize19'] = prize * 0.012;
+		    stats['prize20'] = prize * 0.012;
+		    stats['prize21'] = prize * 0.012;
+		    stats['prize22'] = prize * 0.0115;
+		    stats['prize23'] = prize * 0.0115;
+		    stats['prize24'] = prize * 0.0115;
+	            stats['prize25'] = prize * 0.0115
                 }
 
                 function processTemplateData(data) {
