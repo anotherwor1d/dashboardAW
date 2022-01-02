@@ -467,7 +467,7 @@
                                                 <th>#</th>
                                                 <th>% of Pool</th>
                                                 <th>Total Prize</th>
-                                                <th>Guaranteed</th>
+                                                <th>500 WAX Guaranteed</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -665,8 +665,8 @@
                 function proccessPrizePool() {
                     data = stats['toolsSold'];
        
-                    sumWax = 0
-                    multiplyWax = sumWax*1.2 
+                    sumWax = data - 1000
+                    multiplyWax = 0*sumWax*1.2 
                     prize = multiplyWax;
 
                     stats['prizePool'] = prize;
